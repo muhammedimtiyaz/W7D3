@@ -1,0 +1,1 @@
+json.gifts @guest.gifts, :title, :description
