@@ -10,3 +10,9 @@ export const receiveAllPokemon = (pokemons) => ({
 
 
 // async action creators
+
+export const requestAllPokemon = () => {
+  return (dispatch) => {
+    return Utils.fetchAllPokemon().then(pokemons => dispatch(receiveAllPokemon(pokemons)));
+  };
+}
